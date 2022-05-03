@@ -22,7 +22,7 @@
 
 
 
-// part 3
+////////////////////////// part 3
 
 // let firstname , lastname, age, gender;
 
@@ -37,7 +37,7 @@
 
 
 
-// part 4 
+////////////////////////// part 4 
 // random number 
 let randomNum;
 let min , max;
@@ -68,3 +68,52 @@ function bin2dec(stringnum) {
     return decnum;
 }
 console.log(bin2dec(stringnum));
+
+
+
+
+////////////////////////// part 5
+// number1
+let Sum;
+function sum(num1,num2) {
+    Sum=num1+num2;
+    if(num1===num2)
+    {
+        return Sum*3;
+    }
+    else
+    {
+        return Sum;
+    }
+}
+console.log(sum(3,03));
+
+// number2
+let awnser;
+function difference(num1) 
+{
+    awnser= Math.abs(num1-19);
+    if (awnser>19)
+    {
+       return awnser*3
+    }
+    else
+    {
+        return awnser
+    }
+}
+console.log(difference(2));
+
+// number3
+function checkstring(example,checkword) 
+{
+    if (example.includes(checkword,0)) 
+    {
+        return example;
+    }
+    else
+    {
+        return checkword.concat(example);
+    }
+}
+console.log(checkstring("Organisation","Lo"));
