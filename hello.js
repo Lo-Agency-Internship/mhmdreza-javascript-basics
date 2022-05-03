@@ -121,7 +121,80 @@ console.log(checkstring("Organisation","Lo"));
 
 
 
-////////////////////////////// 7
+
+//////////////////////////// part 6
+
+
+function logicalGateBuffer(part1) 
+{
+    return part1;
+}
+
+function logicalGateNot(part1)
+{
+    return !part1;
+}
+
+function logicalGateAnd(part1,part2) 
+{
+    if (part1===true && part2===true) {
+        return true;
+    }
+    else{
+        return false
+    }
+}
+function logicalGateOr(part1,part2) 
+{
+    if (part1===false || part2===false) {
+        return false;
+    }
+    else{
+        return true
+    }
+}
+function logicalGateNand(part1,part2) 
+{
+    if (!(part1===true && part2===true)) {
+        return true;
+    }
+    else{
+        return false
+    }
+}
+
+function logicalGateNor(part1 ,part2) 
+{
+    if (!(part1===false || part2===false)) {
+        return true;
+    }
+    else{
+        return false
+    }
+}
+
+function logicalGateXor(part1,part2) 
+{
+    if (part1===part2) {
+        return false;
+    }
+    else{
+        return true
+    }
+}
+
+function logicalGateXnor(part1,part2)
+{
+    if (!(part1===part2)) {
+        return false;
+    }
+    else{
+        return true
+    }
+}
+
+
+//////////////////////////////part7
 ////Iterative
 let x=5;
 function factorialIterative(x) {
