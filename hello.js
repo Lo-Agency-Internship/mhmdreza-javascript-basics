@@ -117,3 +117,32 @@ function checkstring(example,checkword)
     }
 }
 console.log(checkstring("Organisation","Lo"));
+
+
+
+
+////////////////////////////// 7
+////Iterative
+let x=5;
+function factorialIterative(x) {
+ 
+    for (let index = 1; index <= x; index++) {
+        awnser=awnser*index;
+    }
+    return awnser;
+}
+console.log(factorialIterative(5));
+
+///Recursive
+let x1=10;
+function fuctorialRecursive(x1) {
+    if (x1===0) {
+        return 1;
+    }
+    return x1 * fuctorialRecursive(x1-1);
+}
+console.log(fuctorialRecursive(x1));
+
+
+
+
