@@ -196,15 +196,14 @@ function logicalGateXnor(part1,part2)
 
 //////////////////////////////part7
 ////Iterative
-let x=5;
+let awnser1=1;
 function factorialIterative(x) {
- 
     for (let index = 1; index <= x; index++) {
-        awnser=awnser*index;
+        awnser1=awnser1*index;
     }
-    return awnser;
+    return awnser1;
 }
-console.log(factorialIterative(5));
+console.log(factorialIterative(6));
 
 ///Recursive
 let x1=10;
@@ -217,5 +216,51 @@ function fuctorialRecursive(x1) {
 console.log(fuctorialRecursive(x1));
 
 
+//////////////////////////////part8
+
+const arr1 = []
+for (let index = 0; index < 10; index++) {
+   let randnumber=rand(15,50);
+   arr1.push(randnumber);
+}
+// Map
+const res =[];
+function costumMap(arr1,func) {
+    for (let index = 0; index < arr1.length; index++) {
+         res.push(func(arr1[index]));
+    }
+    return res;
+}
+console.log(arr1);
+costumMap(arr1,number => number*2)
+console.log(res);
+
+// Filter
+const res1 =[];
+function costomFilter(arr,func)
+{
+    for (let index = 0; index < arr1.length; index++) {
+      
+        if (func(arr1[index])) {
+            res1.push(arr1[index])
+        }
+    }
+    return res1;
+}
+console.log(arr1);
+costomFilter(arr1,number1 => (number1>30))
+console.log(res1);
+
+// Reduce
 
 
+function costomReduce(arr1,func)
+{
+    let accu=1;
+    for (let index = 1; index < arr1.length; index++) {
+      accu=func(arr1[index],accu)
+    }
+    return accu;
+}
+console.log(arr1);
+console.log(costomReduce(arr1,(current,accumulator)=>current+accumulator));
