@@ -219,7 +219,7 @@ console.log(fuctorialRecursive(x1));
 //////////////////////////////part8
 
 const arr1 = []
-for (let index = 0; index < 10; index++) {
+for (let index = 0; index < 2; index++) {
    let randnumber=rand(15,50);
    arr1.push(randnumber);
 }
@@ -256,8 +256,8 @@ console.log(res1);
 
 function costomReduce(arr1,func)
 {
-    let accu=1;
-    for (let index = 1; index < arr1.length; index++) {
+    let accu=0;
+    for (let index = 0; index < arr1.length; index++) {
       accu=func(arr1[index],accu)
     }
     return accu;
